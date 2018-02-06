@@ -1,6 +1,13 @@
 {
   "blocks": {
-
+    "header": [],
+    "head": [],
+    "bottom": [],
+    "title": [],
+    "recomend": [],
+    "options": [],
+    "about": [],
+    "feedbacks": []
   },
   "addCssBefore": [
     "./src/sass/variables.sass",

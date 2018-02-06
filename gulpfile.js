@@ -55,7 +55,7 @@ let postCssPlugins = [
   objectFitImages()
 ];
 
-//Gulp-less компилирует Sass в css
+//Gulp-Sass компилирует Sass в css
 gulp.task('style', function () {
   console.log('---------- Компиляция стилей');
   return gulp.src(dirs.srcPath + 'sass/style.sass')
@@ -169,7 +169,7 @@ gulp.task('js', function (callback) {
 // Оптимизация изображений 
 gulp.task('img:opt', function (callback) {
     console.log('---------- Оптимизация картинок');
-    return gulp.src(dirs.srcPath + '/img/**/*.{jpg,jpeg,gif,png,svg,JPG}')
+    return gulp.src(dirs.srcPath + '/blocks/**/*.{jpg,jpeg,gif,png,svg,JPG}')
       .pipe(imagemin({
         progressive: true,
         optimizationLevel: 10,
@@ -182,7 +182,7 @@ gulp.task('img:opt', function (callback) {
 gulp.task('build', function (callback) {
   gulpSequence(
     'clean',
-    ['style', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'],
+    ['style', 'js', 'img:opt', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'],
     'jade',
     callback
   );
