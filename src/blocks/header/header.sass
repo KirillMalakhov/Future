@@ -1,2 +1,51 @@
 .header
     background-color: #fff
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 
+    &__menu
+        grid-column: 1 / -1
+    &__menu_list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    &__menu_list-item
+        display: grid
+        text-align: center
+        a
+            text-decoration: none
+            color: black
+    &__logo
+        margin: 15px 25px 0px   
+    &__calc
+        color: #f58a75
+        font-size: 23px
+        align-self: end
+        justify-self: end
+        margin-bottom: 20px
+        
+    &__phone
+        align-self: end
+        justify-self: end 
+        margin-right: 20px
+        margin-bottom: 15px
+   
+    &__phone_time
+        font-size: 16px
+        text-align: right
+        margin-bottom: 0px
+    &__phone_number
+        font-size: 31px
+        text-align: right  
+        margin: 0px
+    &__menu
+        font-size: 24px
+        
+    &__menu_list
+        margin-bottom: 0
+        padding-left: 0 
+        margin-top: 10px
+    &__menu_list-item
+        border-right: 1px solid #000   
+        padding-bottom: 16px
+        padding-top: 16px
+    &__menu_list-item:last-child
+        border-right: none

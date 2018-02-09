@@ -1,2 +1,46 @@
 .feedbacks
     background-color: #fff
+    grid-column: 2 / -1
+    border-radius: 10px
+    margin-bottom: 92px
+    &__title
+        grid-column: 2 / 4
+        margin-bottom: 0
+        font-size: 26px
+        font-weight: normal
+    &__more
+        margin-bottom: 0
+        justify-self: end
+        align-self: end
+        color: #eb5825
+        text-decoration: underline
+    &__item
+        margin-top: 40px
+        margin-left: 25px
+        padding-bottom: 38px
+    &__item cite
+        font-style: normal
+
+    &__item p 
+        font-size: 14px
+        color: #8a8a8a
+    &__item blockquote
+        margin-left: 0
+        font-size: 14px
+    &__item-more
+        color: #eb5825
+        border-bottom: 1px dashed #eb5825
+        text-decoration: none
+    &__item-more:before
+        content: url(../img/feedbacks/img/arrow.png)
+        padding-right: 10px
+        border-bottom: 0px
+    &__item-review-btn
+        display: inline-block
+        text-decoration: none
+        padding: 15px 30px 
+        background-color: #eb5825
+        color: #ffffff
+        border-radius: 5px 
+        margin-top: 30px
+        

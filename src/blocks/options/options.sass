@@ -1,2 +1,77 @@
 .options
     background-color: #fff
+    grid-column: 2 / 5
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    border-radius: 10px
+    &__title
+        grid-column: 1 / -1
+        margin-left: 25px
+        margin-bottom: 30px
+    &__img
+        grid-column: 1 / 2
+        text-align: center
+        color: #a6a6a6
+        margin-left: 80px
+        padding-bottom: 110px
+        margin-right: 80px
+    &__img img
+        margin-bottom: 25px
+    &__selection
+        grid-column: 2 / -1
+    &__selection-list-item
+        list-style-type: none
+        list-style-image: url(../img/options/img/markers.png)
+        font-size: 14px
+
+    &__selection-list
+        margin-bottom: 36px
+    &__selection-title
+        font-size: 20px
+        margin-bottom: 25px
+    &__selection-choice
+        display: grid
+        grid-template-columns: repeat(7, 1fr)
+        width: 58px
+        grid-gap: 8px
+        margin-bottom: 30px
+    &__selection-choice-item
+        text-align: center
+        height: 58px
+        width: 58px
+        background-image: url(../img/options/img/options.png)
+        border-radius: 5px
+    &__selection-choice-item1
+        background-position-x: 0px
+    &__selection-choice-item2
+        background-position-x: -70px
+    &__selection-choice-item3
+        background-position-x: -140px
+    &__selection-choice-item4
+        background-position-x: -207px
+    &__selection-choice-item5
+        background-position-x: -276px
+    &__selection-choice-item6
+        background-position-x: -345px
+    &__selection-choice-item7
+        background-position-x: -415px
+    &__selection-choice-more
+        font-size: 14px
+        width: 345px
+        margin-bottom: 45px
+    &__selection-calc-btn
+        display: inline-block
+        font-size: 18px
+        color: #fff
+        background-color: #eb5825
+        padding: 12px 40px
+        border-radius: 5px
+        text-decoration: none
+    &__selection-konsalt
+        display: inline-block
+        margin-top: 15px
+        font-size: 14px
+        color: #8a8a8a
+        text-decoration: underline 
+.choice
+    background-position-x: 0px
